@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title  -->
+    <title>Let’s talk</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" type="image/x-icon" href="./img/fav.png" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="lets-talk">
+      <!-- start left block-->
+
+      <div class="lets-talk__content">
+        <div class="left-block">
+          <h1 class="art">Let's talk ABOUT your project!</h1>
+          <div class="lets-talk__text-content">
+            Vestibulum erat magna, tristique eu ipsum ut, porttitor vestibulum
+            sem. Suspendisse vel nisl eu justo rutrum congue non sit amet arcu.
+            Suspendisse a tortor nec orci imperdiet pharetra. In interdum nec
+            lacus nec tempor.
+          </div>
+          <div class="lets-talk__divider"></div>
+        </div>
+        <!-- end left block -->
+
+        <!-- start right block FORM-->
+
+        <div class="right-block">
+          <form action="" id="form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              autocomplete="off"
+              placeholder="NAME"
+              required
+            />
+            <input
+              type="text"
+              name="firm"
+              id="firm"
+              autocomplete="off"
+              placeholder="FIRM"
+              required
+            />
+
+            <input
+              type="email"
+              autocomplete="off"
+              placeholder="email"
+              name="email"
+              id="email"
+              required
+            />
+            <input
+              type="tel"
+              autocomplete="off"
+              id="phone"
+              name="phone"
+              pattern="[0-9]"
+              placeholder="TELEPHONE"
+              required
+            />
+            <textarea name="talk" id="talk" placeholder="Let’s TALK"></textarea>
+            <br />
+            <button type="submit" form="form" class="sendbtn" value="submit">
+              Send
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- end right block -->
+    </div>
+    <p class="lets-talk__slogan">LET’S TA</p>
+    <p class="lets-talk__slogan lets-talk__text2">your idea</p>
+
+    <!--Jquery-->
+    <script src="./js/jquery.min.js"></script>
+    <!--Fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/2c4762493d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Gmaps-->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO7KRxbMzfskBKDrY-OlESZejI0mIJQKM&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <script src="./js/map.js"></script>
+    <!--Slick Slider-->
+    <script src="./js/slick.min.js"></script>
+    <!--JS-->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
