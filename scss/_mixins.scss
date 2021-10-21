@@ -1,0 +1,384 @@
+@mixin logo {
+  width: 120px;
+  height: 120px;
+  margin-left: 50px;
+  position: absolute;
+  z-index: 55;
+  background-color: $color__main_red;
+
+  .logo__name93 {
+    text-align: right;
+    color: $color__main_white;
+    font-family: $font_Violence;
+    font-size: 60px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.4;
+    letter-spacing: normal;
+    padding-top: 45px;
+    padding-right: 5px;
+    @include mobile {
+      font-size: 25px;
+      padding-top: 20px;
+    }
+  }
+  .logo__agency {
+    font-family: $font_AxiformaBlack;
+    font-size: 22px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: normal;
+    color: $color__main_white;
+    padding-top: 20px;
+    padding-left: 12px;
+
+    @include mobile {
+      font-size: 13px;
+      padding: 10px 3px;
+    }
+  }
+
+  @include mobile {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+  }
+}
+
+@mixin btnHeader($color) {
+  width: 68px;
+  height: 81px;
+  background-color: $color;
+  color: $color__main_white;
+  font-family: $font_AxiformaSemiBold;
+  text-transform: uppercase;
+  z-index: 21;
+  align-items: center;
+  position: fixed;
+  cursor: pointer;
+  z-index: 15;
+  top: 0;
+  right: 5%;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.71;
+  text-align: center;
+  padding-top: 50px;
+  outline: none;
+  border: none;
+  @include mobile {
+    width: 60px;
+    height: 60px;
+    font-size: 12px;
+    padding: 9px 3px;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@mixin social-icons {
+  &__icon {
+    display: flex;
+    z-index: 25;
+
+    a {
+      text-decoration: none;
+      color: $color__main_white;
+      cursor: pointer;
+    }
+    i {
+      padding: 15px;
+    }
+  }
+
+  &__link {
+    z-index: 50;
+    width: 46px;
+    height: 46px;
+    background-color: transparent;
+    text-align: center;
+    color: $color__main_white;
+    text-decoration: none;
+  }
+  &__link:hover {
+    background-color: $color__main_red;
+  }
+}
+
+@mixin slogan {
+  font-weight: 900;
+  z-index: 1;
+  font-family: $font_AxiformaHeavy;
+  color: $color__main_red;
+  text-transform: uppercase;
+  font-size: 240px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 445px;
+  right: -460px;
+
+  @include mobile {
+    font-size: 60px;
+    opacity: 0.2;
+    top: 19%;
+    right: -20%;
+  }
+
+  @include tablet {
+    font-size: 157px;
+  }
+
+  @include laptop {
+    font-size: 180px;
+  }
+}
+
+@mixin caption {
+  font-size: 22px;
+  font-weight: 900;
+  font-family: $font_AxiformaHeavy;
+  text-transform: uppercase;
+  color: $color__main_red;
+  line-height: 3.05;
+
+  @include mobile {
+    font-size: 10px;
+  }
+
+  @include tablet {
+    font-size: 16px;
+  }
+
+  @include laptop {
+  }
+}
+
+@mixin huge-letter {
+  font-family: $font_AxiformaHeavy;
+  font-size: 1160px;
+  z-index: 2;
+  font-weight: 900;
+  line-height: 3.05;
+  text-align: left;
+  color: $color__main_white;
+  opacity: 0.02;
+  position: absolute;
+  text-transform: uppercase;
+  top: -1160px;
+  left: -245px;
+}
+
+@mixin text {
+  width: 370px;
+  height: 114px;
+  line-height: 1.45;
+  font-family: $font_AxiformaLight;
+  font-size: 22px;
+  color: $color__main_white;
+
+  @include mobile {
+    width: 260px;
+    font-size: 16px;
+  }
+}
+
+@mixin text-content {
+  width: 375px;
+  height: 86px;
+  line-height: 1.71;
+  font-family: $font_AxiformaSemiBold;
+  font-size: 14px;
+  font-weight: 300;
+  color: $color__main_grey;
+
+  @include mobile {
+    width: 292px;
+  }
+
+  @include tablet {
+    width: 292px;
+  }
+}
+
+@mixin more {
+  text-transform: uppercase;
+  font-family: $font_AxiformaSemiBold;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0;
+  margin: 40px 0px 0px 0px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  background-image: none;
+  cursor: pointer;
+  color: $color__main_white;
+  &:hover {
+    transform: scale(0.9);
+  }
+
+  a {
+    text-decoration: none;
+    color: $color__main_white;
+
+    &:hover {
+      color: $color__main_red;
+    }
+  }
+
+  @include mobile {
+  }
+  @include tablet {
+  }
+}
+
+@mixin divider {
+  margin-right: 142px;
+  width: 390px;
+  border-top: 1px solid $color__main_red;
+
+  @include mobile {
+    margin-right: 55px;
+    width: 250px;
+  }
+}
+
+@mixin wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-family: $font_AxiformaBlack;
+  background-color: $color__main_darkgrey;
+  background-position: bottom;
+  background-size: cover;
+
+  @include mobile {
+    flex-direction: column;
+  }
+  @include tablet {
+    flex-direction: column;
+    min-width: 100%;
+
+  }
+  @include laptop {
+    flex-direction: column;
+  }
+}
+
+@mixin sidebar {
+  color: $color__main_white;
+  text-align: left;
+  width: 38%;
+  position: relative;
+  padding-left: 110px;
+  padding-top: 150px;
+  z-index: 20;
+
+  @include mobile {
+    width: 100%;
+  }
+
+  @include tablet {
+    width: 100%;
+   }
+
+  @include laptop {
+    width: 100%;
+  }
+}
+
+@mixin page {
+  box-sizing: border-box;
+  width: 62%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  position: relative;
+
+  @include mobile {
+    width: 100%;
+  }
+
+  @include tablet {
+    width: 100%;
+  }
+
+  @include laptop {
+    width: 100%;
+  }
+}
+
+@mixin block {
+  width: 1109px;
+  height: 158px;
+  position: relative;
+  z-index: 5;
+  font-family: $font_AxiformaHeavy;
+  cursor: pointer;
+
+  :hover {
+    background-color: $color__main_darkgrey;
+    border-bottom: 2px solid $color__main_red;
+    color: $color__main_red;
+    opacity: 0.7;
+    i {
+      color: $color__main_red;
+    }
+  }
+
+  i {
+    color: transparent;
+    font-size: 20px;
+    margin-left: 50%;
+    position: absolute;
+  }
+
+  @include mobile {
+    width: 280px;
+    height: 118px;
+    i {
+      display: none;
+    }
+  }
+
+  @include tablet {
+  
+    i {
+      display: none;
+    }
+  }
+  @include laptop {
+    width: 700px;
+    height: 163px;
+  }
+}
+
+@mixin block-text {
+  font-size: 37px;
+  font-weight: 900;
+  line-height: 0.92;
+  text-align: left;
+  text-transform: uppercase;
+  color: $color__main_white;
+  margin: 50px 0px 0px 0px;
+  padding: 45px;
+
+  @include mobile {
+    font-size: 15px;
+    margin: 5px 0px 0px 0px;
+  }
+  @include tablet {
+    font-size: 25px;
+    margin: 15px 0px 0px 0px;
+  }
+}

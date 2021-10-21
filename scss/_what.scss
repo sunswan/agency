@@ -1,0 +1,76 @@
+.what {
+  @include wrapper;
+
+  &__sidebar {
+    @include sidebar;
+  }
+
+  &__caption {
+    @include caption;
+    margin: 0px 0px 315px 0px;
+     
+  @include mobile {
+    margin: 0px 0px 25px 0px;
+
+  }
+  }
+
+  &__text {
+    @include text;
+    margin: 0px 0px 84px 0px;
+  }
+  &__more {
+    @include more;
+    margin: 0px;
+  }
+  &__divider {
+    @include divider;
+    margin-top: 30px;
+  }
+
+  &__huge-letter {
+    @include huge-letter;
+  }
+}
+
+.fa-angle-right {
+  color: $color__main_red;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.what__page {
+  @include page;
+  display: block;
+  padding-left: 80px;
+  background-image: url(./img/what_bg.jpg);
+}
+
+.block {
+  @include block;
+}
+
+.block-text {
+  @include block-text;
+}
+
+.what__slogan {
+  @include slogan;
+  top: 305px;
+  right: -365px;
+}
+
+.what__text2 {
+  right: -560px;
+  opacity: 0.3;
+
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+  }
+
+  @include laptop {
+    right: -400px;
+  }
+}

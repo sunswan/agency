@@ -1,0 +1,124 @@
+.lets-talk {
+  @include wrapper;
+  background-image: url(./img/form_bg.jpg);
+  @include flex-center;
+  &__content {
+    width: 1250px;
+    height: 740px;
+    background-color: $color__form;
+    display: flex;
+  }
+  &__text-content {
+    @include text-content;
+    margin-top: 112px;
+  }
+  &__divider {
+    @include divider;
+    margin-top: 71px;
+  }
+  &__slogan {
+    @include slogan;
+    right: -418px;
+  }
+
+  &__text2 {
+    right: -583px;
+    opacity: 0.3;
+  }
+}
+.art {
+  font-family: $font_AxiformaHeavy;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 900;
+  color: $color__main_red;
+}
+.left-block {
+  width: 50%;
+  padding-left: 139px;
+  padding-top: 125px;
+}
+.right-block {
+  width: 50%;
+  padding-right: 139px;
+  padding-top: 117px;
+
+  textarea {
+    width: 420px;
+    height: 140px;
+    padding-left: 28px;
+    color: $color__main_white;
+    background-color: $color__main_darkgrey;
+    outline: none;
+    border: none;
+    &:hover {
+      border: 2px solid $color__main_red;
+    }
+  }
+
+  input {
+    color: $color__main_white;
+    width: 420px;
+    height: 60px;
+    padding-left: 28px;
+    background-color: $color__main_darkgrey;
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+    &:hover {
+      border: 2px solid $color__main_red;
+    }
+  }
+  ::placeholder {
+    font-family: $font_AxiformaLight;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 6.67;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  ::placeholder:active {
+    color: $color__main_white;
+  }
+
+  .fa-angle-right {
+    color: $color__main_red;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  input:focus {
+    outline: none;
+    opacity: 1;
+    border: 2px solid $color__main_red;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+
+  input:hover::placeholder {
+    color: transparent;
+  }
+
+  textarea:hover::placeholder {
+    color: transparent;
+  }
+
+  .sendbtn {
+    margin: 40px 0px 0px 25px;
+    border: none;
+    font-family: $font_AxiformaSemiBold;
+    background-color: transparent;
+    background-image: none;
+    color: $color__main_white;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover {
+      transform: scale(0.98);
+      color: $color__main_red;
+    }
+  }
+}

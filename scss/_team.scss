@@ -1,0 +1,125 @@
+.team {
+  @include wrapper;
+
+  &__sidebar {
+    @include sidebar;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__caption {
+    @include caption;
+    a {
+      text-decoration: none;
+      color: $color__main_red;
+    }
+  }
+
+  &__text {
+    @include text;
+    margin: 220px 0px 50px 0px;
+  }
+
+  &__text-content {
+    @include text-content;
+    margin-bottom: 120px;
+  }
+
+  &__huge-letter {
+    @include huge-letter;
+  }
+
+  &__divider {
+    @include divider;
+  }
+  &__slogan {
+    @include slogan;
+  }
+  &__text2 {
+    top: 150px;
+    opacity: 0.3;
+  }
+}
+
+.fa-angle-down {
+  color: $color__main_white;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.team__page {
+  @include page;
+  background-image: url(./img/team_bg.jpg);
+  ul {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 70px;
+    justify-content: center;
+  }
+}
+
+.team__content-box {
+  display: block;
+}
+.rate {
+  font-family: $font_AxiformaHeavy;
+  font-size: 98px;
+  font-weight: 900;
+  text-align: left;
+  color: $color__main_red;
+  span {
+    font-size: 42px;
+    position: absolute;
+  }
+}
+
+.active-block1 {
+  border-top: 3px solid $color__main_red;
+  width: 206px;
+  height: 527px;
+  margin: 0px 7px 0px 0px;
+  display: flex;
+  justify-content: center;
+  padding-top: 29px;
+  background-image: linear-gradient(
+    rgba(31, 35, 53, 0.7),
+    rgba(204, 33, 59, 0.7)
+  );
+}
+.active-block2 {
+  border-top: 3px solid $color__main_red;
+  width: 204px;
+  height: 237px;
+  margin: 0px 7px 0px 0px;
+  display: flex;
+  justify-content: center;
+  padding-top: 29px;
+  background-image: linear-gradient(
+    rgba(31, 35, 53, 0.7),
+    rgba(116, 46, 57, 0.7)
+  );
+}
+
+.active-block3 {
+  border-top: 3px solid $color__main_red;
+  width: 206px;
+  height: 397px;
+  margin: 0px 7px 0px 0px;
+  display: flex;
+  justify-content: center;
+  padding-top: 29px;
+  background-image: linear-gradient(
+    rgba(31, 35, 53, 0.7),
+    rgba(148, 24, 42, 0.7)
+  );
+}
+
+.active-block-text {
+  text-transform: uppercase;
+  font-family: $font_AxiformaSemiBold;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.09;
+  text-align: left;
+  color: $color__main_white;
+}

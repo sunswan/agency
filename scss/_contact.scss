@@ -1,0 +1,134 @@
+.contact {
+  @include wrapper;
+
+  &__slogan {
+    @include slogan;
+  }
+
+  &__text2 {
+    top: 150px;
+    opacity: 0.3;
+  }
+}
+#map {
+  width: 38%;
+  height: 97%;
+  border: 2px solid $color__main_red;
+  margin: 15px;
+  @include mobile {
+    width: 94%;
+    height: 97%;
+  }
+
+  @include tablet {
+    width: 70%;
+    height: 70%;
+  }
+  @include laptop {
+    width: 65%;
+    height: 65%;
+  }
+}
+
+.contact__page {
+  width: 62%;
+  height: 100vh;
+  padding-left: 120px;
+  padding-top: 82px;
+  background-image: url(./img/contact_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include mobile {
+    width: 100%;
+  }
+
+  @include tablet {
+    width: 100%;
+  }
+  @include laptop {
+    width: 100%;
+  }
+
+}
+
+.text-red {
+  font-family: $font_AxiformaHeavy;
+  text-transform: uppercase;
+  color: $color__main_red;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.text-white {
+  font-weight: 300;
+  color: $color__main_white;
+  font-family: $font_AxiformaLight;
+  margin-bottom: 88px;
+  line-height: 1.71;
+}
+
+.subscribe {
+  font-family: $font_AxiformaHeavy;
+  text-transform: uppercase;
+  color: $color__main_red;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+input {
+  color: $color__main_white;
+  width: 420px;
+  height: 60px;
+  padding-left: 28px;
+  background-color: $color__main_darkgrey;
+  outline: none;
+  border: none;
+  &:hover {
+    border: 2px solid $color__main_red;
+  }
+}
+
+::placeholder {
+  color: $color__main_white;
+}
+
+.fa-angle-right {
+  color: $color__main_red;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+  opacity: 1;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input:hover::placeholder {
+  color: transparent;
+}
+
+.sendbtn {
+  font-family: $font_AxiformaSemiBold;
+  margin: 24px 0px 10px 0px;
+  border: none;
+  background-color: transparent;
+  background-image: none;
+  color: $color__main_white;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &:hover {
+    transform: scale(0.98);
+    color: $color__main_red;
+  }
+}

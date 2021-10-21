@@ -1,0 +1,146 @@
+.social {
+  @include wrapper;
+
+  &__sidebar {
+    @include sidebar;
+  }
+
+  &__caption {
+    @include caption;
+  }
+
+  &__text {
+    @include text;
+    margin-top: 260px;
+  }
+
+  &__divider {
+    @include divider;
+  }
+  &__huge-letter {
+    @include huge-letter;
+  }
+
+  &__slogan {
+    @include slogan;
+    right: -290px;
+    top: 345px;
+  }
+
+  &__text2 {
+    right: -387px;
+    opacity: 0.3;
+  }
+}
+
+.follow {
+  font-family: $font_AxiformaLight;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 2;
+  text-align: left;
+  margin: 125px 0px 15px 0px;
+}
+.icon-tw-big {
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  right: -50px;
+  bottom: -50px;
+}
+
+.icon-tw-small {
+  width: 32px;
+  height: 27px;
+  color: $color__main_red;
+  font-size: 25px;
+  top: 92%;
+  right: 2%;
+  position: absolute;
+  z-index: 1;
+}
+
+.socialny {
+  @include social-icons;
+}
+
+//////////// slider style /////////////
+
+.slider-wrapper {
+  width: 640px;
+  height: 65%;
+  margin-top: 200px;
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.slider__item {
+  width: 630px;
+  height: 180px;
+  opacity: 0.8;
+  background-color: $color__main_darkgrey;
+  margin-bottom: 25px;
+  margin-left: 75px;
+  color: $color__main_white;
+  z-index: 200;
+  a {
+    text-decoration: none;
+    color: $color__main_white;
+    cursor: pointer;
+  }
+}
+
+.slider__item:hover {
+  background-color: $color__main_darkgrey;
+  border-bottom: 2px solid $color__main_red;
+}
+
+.block-header {
+  display: flex;
+  margin: 0px 20px;
+  i {
+    color: $color__main_red;
+  }
+}
+.text-data {
+  font-weight: 600;
+  line-height: 1.71;
+  text-align: left;
+  color: $color__main_red;
+  text-transform: uppercase;
+  font-family: $font_AxiformaSemiBold;
+  margin: 20px 70px 20px 8px;
+}
+
+.text-count {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 2;
+  text-align: right;
+  margin: 20px 80px 0px 30px;
+  i {
+    margin-left: 20px;
+  }
+}
+
+.block__text {
+  width: 465px;
+  height: 63px;
+}
+
+.text-item {
+  font-weight: 300;
+  text-align: left;
+  margin: 0px 20px 50px 30px;
+  line-height: 1.71;
+}
+
+//////// end slider style  /////@include
+
+.social__page {
+  @include page;
+  display: block;
+  background-image: url(./img/social_bg.jpg);
+}
