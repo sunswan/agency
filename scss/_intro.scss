@@ -3,7 +3,7 @@ body {
 }
 .intro {
   box-sizing: border-box;
-  min-height: 130vh;
+  min-height: 100vh;
   text-align: center;
   transform-style: preserve-3d;
   position: relative;
@@ -15,7 +15,7 @@ body {
     position: absolute;
     top: 32%;
     z-index: 10;
-    left: 18%;
+    left: 10%;
 
     @include mobile {
       max-width: 60%;
@@ -33,12 +33,12 @@ body {
     }
     @include desktop {
       max-width: 80%;
-      top: 30%;
+      top: 40%;
     }
   }
   &__design {
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 0;
     max-width: 100%;
 
@@ -66,17 +66,16 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  min-height: 120vh;
+  min-height: 100vh;
   z-index: -1;
   transform-origin: center;
-  min-height: 120vh;
-  background-image: url("./img/bg1.jpg");
+  background-image: url("../img/bg1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   transition: 1s;
   /* Parallax */
-  transform: translateZ(-0.7px) scale(2);
+  // transform: translateZ(-0.7px) scale(2);
 }
 
 /*-- Navigation menu--*/
@@ -139,7 +138,7 @@ body {
   font-size: 12px;
   font-weight: 300;
   text-align: right;
-  margin: 220px 49px 0px 0px;
+  margin: 165px 49px 0px 0px;
   @include mobile {
     margin: 60px 42px 0px 0px;
   }

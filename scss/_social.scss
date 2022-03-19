@@ -24,7 +24,7 @@
   &__slogan {
     @include slogan;
     right: -290px;
-    top: 345px;
+    top: 290px;
   }
 
   &__text2 {
@@ -64,8 +64,6 @@
 .socialny {
   @include social-icons;
 }
-
-//////////// slider style /////////////
 
 .slider-wrapper {
   width: 640px;
@@ -137,10 +135,8 @@
   line-height: 1.71;
 }
 
-//////// end slider style  /////@include
-
 .social__page {
   @include page;
   display: block;
-  background-image: url(./img/social_bg.jpg);
+  background-image: url(../img/social_bg.jpg);
 }
