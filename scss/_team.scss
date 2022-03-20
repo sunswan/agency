@@ -49,7 +49,7 @@
 
 .team__page {
   @include page;
-  background-image: url(./img/team_bg.jpg);
+  background-image: url(../img/team_bg.jpg);
   ul {
     display: flex;
     align-items: flex-end;

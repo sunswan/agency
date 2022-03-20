@@ -119,22 +119,25 @@
   font-family: $font_AxiformaHeavy;
   color: $color__main_red;
   text-transform: uppercase;
-  font-size: 240px;
+  font-size: 220px;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   position: absolute;
 
-  @include mobile {
-    font-size: 60px;
-    opacity: 0.2;
-    top: 19%;
-    right: -20%;
-  }
+  // @include mobile {
+  //   font-size: 60px;
+  //   opacity: 0.2;
+  //   top: 19%;
+  //   right: -20%;
+  // }
 
   @include tablet {
-    font-size: 157px;
+    display: none;
   }
 
+  @media (max-height: 720px) {
+    font-size: 207px;
+  }
   @include laptop {
     font-size: 180px;
   }
@@ -258,6 +261,7 @@
   background-color: $color__main_darkgrey;
   background-position: bottom;
   background-size: cover;
+  overflow: hidden;
 
   @include mobile {
     flex-direction: column;
@@ -265,9 +269,6 @@
   @include tablet {
     flex-direction: column;
     min-width: 100%;
-  }
-  @include laptop {
-    flex-direction: column;
   }
 }
 
@@ -286,10 +287,6 @@
   }
 
   @include tablet {
-    width: 100%;
-  }
-
-  @include laptop {
     width: 100%;
   }
 }

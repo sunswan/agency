@@ -1,6 +1,6 @@
 .lets-talk {
   @include wrapper;
-  background-image: url(./img/form_bg.jpg);
+  background-image: url(../img/form_bg.jpg);
   @include flex-center;
   &__content {
     width: 1250px;

@@ -3,10 +3,16 @@
 
   &__slogan {
     @include slogan;
+    top: 200px;
+    right: -370px;
+    @media (max-height: 720px) {
+      top: 142px;
+      right: -420px;
+    }
   }
 
   &__text2 {
-    top: 150px;
+    top: 70px;
     opacity: 0.3;
   }
 }
@@ -32,24 +38,13 @@
 
 .contact__page {
   width: 62%;
-  height: 100vh;
-  padding-left: 120px;
-  padding-top: 82px;
-  background-image: url(./img/contact_bg.jpg);
+  height: 100%;
+  padding-left: 100px;
+  padding-top: 35px;
+  background-image: url(../img/contact_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
-  @include mobile {
-    width: 100%;
-  }
-
-  @include tablet {
-    width: 100%;
-  }
-  @include laptop {
-    width: 100%;
-  }
-
+  overflow: hidden;
 }
 
 .text-red {
@@ -67,7 +62,7 @@
   font-weight: 300;
   color: $color__main_white;
   font-family: $font_AxiformaLight;
-  margin-bottom: 88px;
+  margin-bottom: 60px;
   line-height: 1.71;
 }
 
