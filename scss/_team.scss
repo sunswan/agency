@@ -1,6 +1,15 @@
 .team {
   @include wrapper;
 
+  &__slogan {
+    @include slogan;
+  }
+
+  &__text2 {
+    opacity: 0.3;
+    top: 80%;
+  }
+
   &__sidebar {
     @include sidebar;
     position: relative;
@@ -31,13 +40,6 @@
 
   &__divider {
     @include divider;
-  }
-  &__slogan {
-    @include slogan;
-  }
-  &__text2 {
-    top: 150px;
-    opacity: 0.3;
   }
 }
 
@@ -114,12 +116,12 @@
   );
 }
 
-.active-block-text {
-  text-transform: uppercase;
-  font-family: $font_AxiformaSemiBold;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 1.09;
-  text-align: left;
-  color: $color__main_white;
-}
+// .active-block-text {
+//   text-transform: uppercase;
+//   font-family: $font_AxiformaSemiBold;
+//   font-size: 22px;
+//   font-weight: 600;
+//   line-height: 1.09;
+//   text-align: left;
+//   color: $color__main_white;
+// }

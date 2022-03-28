@@ -1,6 +1,15 @@
 .what {
   @include wrapper;
 
+  &__slogan {
+    @include slogan;
+  }
+
+  &__text2 {
+    opacity: 0.3;
+    top: 80%;
+  }
+
   &__sidebar {
     @include sidebar;
   }
@@ -8,11 +17,10 @@
   &__caption {
     @include caption;
     margin: 0px 0px 315px 0px;
-     
-  @include mobile {
-    margin: 0px 0px 25px 0px;
 
-  }
+    @include mobile {
+      margin: 0px 0px 25px 0px;
+    }
   }
 
   &__text {
@@ -33,11 +41,6 @@
   }
 }
 
-.fa-angle-right {
-  color: $color__main_red;
-  margin-left: 20px;
-  cursor: pointer;
-}
 
 .what__page {
   @include page;
@@ -50,27 +53,6 @@
   @include block;
 }
 
-.block-text {
-  @include block-text;
-}
-
-.what__slogan {
-  @include slogan;
-  top: 305px;
-  right: -365px;
-}
-
-.what__text2 {
-  right: -560px;
-  opacity: 0.3;
-
-  @include mobile {
-    display: none;
-  }
-  @include tablet {
-  }
-
-  @include laptop {
-    right: -400px;
-  }
-}
+// .block-text {
+//   @include block-text;
+// }

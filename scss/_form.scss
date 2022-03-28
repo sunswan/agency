@@ -1,7 +1,17 @@
 .lets-talk {
   @include wrapper;
-  background-image: url(../img/form_bg.jpg);
   @include flex-center;
+  background-image: url(../img/form_bg.jpg);
+
+  &__slogan {
+    @include slogan;
+  }
+
+  &__text2 {
+    opacity: 0.3;
+    top: 80%;
+  }
+
   &__content {
     width: 1250px;
     height: 740px;
@@ -16,15 +26,7 @@
     @include divider;
     margin-top: 71px;
   }
-  &__slogan {
-    @include slogan;
-    right: -418px;
-  }
 
-  &__text2 {
-    right: -583px;
-    opacity: 0.3;
-  }
 }
 .art {
   font-family: $font_AxiformaHeavy;
@@ -80,12 +82,6 @@
 
   ::placeholder:active {
     color: $color__main_white;
-  }
-
-  .fa-angle-right {
-    color: $color__main_red;
-    margin-left: 20px;
-    cursor: pointer;
   }
 
   input:focus {

@@ -1,6 +1,15 @@
 .social {
   @include wrapper;
 
+  &__slogan {
+    @include slogan;
+  }
+
+  &__text2 {
+    opacity: 0.3;
+    top: 80%;
+  }
+  
   &__sidebar {
     @include sidebar;
   }
@@ -21,16 +30,6 @@
     @include huge-letter;
   }
 
-  &__slogan {
-    @include slogan;
-    right: -290px;
-    top: 290px;
-  }
-
-  &__text2 {
-    right: -387px;
-    opacity: 0.3;
-  }
 }
 
 .follow {

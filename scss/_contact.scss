@@ -3,15 +3,19 @@
 
   &__slogan {
     @include slogan;
-    top: 200px;
-    right: -370px;
   }
 
   &__text2 {
-    top: 160px;
     opacity: 0.3;
+    top: 80%;
+  }
+
+  &__page {
+    @include page;
+    background-image: url(../img/contact_bg.jpg);
   }
 }
+
 #map {
   width: 35%;
   height: 95%;
@@ -21,25 +25,6 @@
   @media (max-width: 920px) {
     width: 94%;
     min-height: 300px;
-  }
-}
-
-.contact__page {
-  width: 65%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 50px;
-  background-image: url(../img/contact_bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  @media (max-width: 920px) {
-    width: 100%;
-    height: auto;
-    padding-bottom: 10%;
-    padding-top: 10%;
   }
 }
 
@@ -94,12 +79,6 @@ input {
 
 ::placeholder {
   color: $color__main_white;
-}
-
-.fa-angle-right {
-  color: $color__main_red;
-  margin-left: 20px;
-  cursor: pointer;
 }
 
 input:focus {

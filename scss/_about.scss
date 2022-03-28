@@ -1,11 +1,22 @@
 .about {
   @include wrapper;
+
+  &__slogan {
+    @include slogan;
+  }
+
+  &__text2 {
+    opacity: 0.3;
+    top: 80%;
+  }
+
   &__sidebar {
     @include sidebar;
-    padding-left: 85px;
-    @include laptop {
-      padding: 50px 0px 0px 225px;
-    }
+  }
+
+  &__page {
+    @include page;
+    background-image: url(../img/about_bg.jpg);
   }
 
   &__caption {
@@ -14,17 +25,9 @@
 
   &__text {
     @include text;
-    margin-top: 50%;
-
-    @include mobile {
-      margin-top: 50px;
-    }
-
-    @include tablet {
-      margin-top: 60px;
-    }
-    @include laptop {
-      margin-top: 80px;
+    margin-top: 42%;
+    @media (max-height: 720px) {
+      margin-top: 25%;
     }
   }
 
@@ -34,84 +37,13 @@
 
   &__divider {
     @include divider;
-    margin-top: 80px;
-
-    @include tablet {
-      margin-top: 25px;
-    }
-    @include tablet {
-      margin-top: 45px;
-    }
   }
 }
 .socialny {
   @include social-icons;
 }
 
-.fa-angle-right {
-  color: $color__main_red;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-.about__page {
-  @include page;
-  padding-left: 80px;
-  display: flex;
-  flex-direction: column;
-
-  background-image: url(../img/about_bg.jpg);
-  @include mobile {
-    padding-left: 25px;
-  }
-  @include tablet {
-    padding-left: 25px;
-  }
-
-  @include laptop {
-    padding: 10px 0px 0px 130px;
-  }
-}
-
 .block {
   @include block;
 }
 
-.block-text {
-  @include block-text;
-}
-
-.about__slogan {
-  @include slogan;
-  top: 140px;
-  right: -445px;
-
-  @include tablet {
-    top: 485px;
-    right: -320px;
-    opacity: 0.8;
-  }
-
-  @include laptop {
-    top: 570px;
-    right: -320px;
-    opacity: 0.8;
-  }
-}
-
-.about__text2 {
-  right: -560px;
-  opacity: 0.3;
-  white-space: nowrap;
-
-  @include mobile {
-    display: none;
-  }
-  @include tablet {
-    right: -400px;
-  }
-
-  @include laptop {
-    right: -400px;
-  }
-}

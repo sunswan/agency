@@ -7,6 +7,16 @@
   overflow-y: scroll;
   overflow-x: hidden;
 
+  &__slogan {
+    @include slogan;
+  }
+
+  &__text2 {
+    opacity: 0.3;
+    top: 80%;
+  }
+
+
   &__sidebar {
     @include sidebar;
     position: absolute;
@@ -29,15 +39,7 @@
   &__divider {
     @include divider;
   }
-  &__slogan {
-    @include slogan;
-    right: -315px;
-  }
-  &__text2 {
-    top: 149px;
-    right: -407px;
-    opacity: 0.3;
-  }
+
 }
 
 .reference::before {
@@ -137,8 +139,3 @@
   }
 }
 
-.fa-angle-right {
-  color: $color__main_red;
-  margin-left: 20px;
-  cursor: pointer;
-}
