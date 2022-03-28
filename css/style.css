@@ -173,8 +173,6 @@ body {
   transform-style: preserve-3d;
   position: relative;
   overflow-y: scroll;
-  overflow-x: hidden;
-  overflow: hidden;
 }
 .intro__agency {
   position: absolute;
@@ -377,16 +375,20 @@ body {
 @media (max-width: 399px) {
   .navy {
     width: 100vw;
-    height: 100vh;
   }
 }
 .navy__links {
-  margin: 305px 49px 0px 0px;
+  margin: 30% 10% 0px 0px;
   text-align: right;
+}
+@media (max-height: 670px) {
+  .navy__links {
+    margin: 20% 10% 0px 0px;
+  }
 }
 @media (max-width: 399px) {
   .navy__links {
-    margin: 110px 40px 0px 0px;
+    margin: 15% 8% 0px 0px;
   }
 }
 .navy__link {
@@ -414,11 +416,16 @@ body {
   font-size: 12px;
   font-weight: 300;
   text-align: right;
-  margin: 165px 49px 0px 0px;
+  margin: 12% 10% 0px 0px;
+}
+@media (max-height: 720px) {
+  .items {
+    margin: 8% 10% 0px 0px;
+  }
 }
 @media (max-width: 399px) {
   .items {
-    margin: 60px 42px 0px 0px;
+    margin: 5% 8% 0px 0px;
   }
 }
 .items__policy {
@@ -490,21 +497,15 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: row;
   font-family: "axiformablack";
   background-color: #1b1e2e;
   background-position: bottom;
   background-size: cover;
-  overflow: hidden;
 }
-@media (max-width: 399px) {
+@media (max-width: 920px) {
   .about {
     flex-direction: column;
-  }
-}
-@media (min-width: 400px) and (max-width: 819px) {
-  .about {
-    flex-direction: column;
-    min-width: 100%;
   }
 }
 .about__sidebar {
@@ -515,7 +516,6 @@ body {
   padding-left: 110px;
   padding-top: 150px;
   z-index: 20;
-  overflow: hidden;
   padding-left: 85px;
 }
 @media (max-width: 399px) {
@@ -663,7 +663,6 @@ body {
   box-sizing: border-box;
   width: 62%;
   height: 100%;
-  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -838,21 +837,15 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: row;
   font-family: "axiformablack";
   background-color: #1b1e2e;
   background-position: bottom;
   background-size: cover;
-  overflow: hidden;
 }
-@media (max-width: 399px) {
+@media (max-width: 920px) {
   .contact {
     flex-direction: column;
-  }
-}
-@media (min-width: 400px) and (max-width: 819px) {
-  .contact {
-    flex-direction: column;
-    min-width: 100%;
   }
 }
 .contact__slogan {
@@ -882,51 +875,43 @@ body {
     font-size: 180px;
   }
 }
-@media (max-height: 720px) {
-  .contact__slogan {
-    top: 142px;
-    right: -420px;
-  }
-}
 .contact__text2 {
-  top: 70px;
+  top: 160px;
   opacity: 0.3;
 }
 
 #map {
-  width: 38%;
-  height: 97%;
+  width: 35%;
+  height: 95%;
   border: 2px solid #ed2340;
   margin: 15px;
 }
-@media (max-width: 399px) {
+@media (max-width: 920px) {
   #map {
     width: 94%;
-    height: 97%;
-  }
-}
-@media (min-width: 400px) and (max-width: 819px) {
-  #map {
-    width: 70%;
-    height: 70%;
-  }
-}
-@media (min-width: 820px) and (max-width: 1199px) {
-  #map {
-    width: 65%;
-    height: 65%;
+    min-height: 300px;
   }
 }
 
 .contact__page {
-  width: 62%;
+  width: 65%;
   height: 100%;
-  padding-left: 100px;
-  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 50px;
   background-image: url(../img/contact_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
+}
+@media (max-width: 920px) {
+  .contact__page {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
 }
 
 .text-red {
@@ -939,6 +924,11 @@ body {
   text-align: left;
   margin-bottom: 20px;
 }
+@media (max-height: 720px) {
+  .text-red {
+    margin-bottom: 10px;
+  }
+}
 
 .text-white {
   font-weight: 300;
@@ -946,6 +936,12 @@ body {
   font-family: "axiformalight";
   margin-bottom: 60px;
   line-height: 1.71;
+}
+@media (max-height: 720px) {
+  .text-white {
+    margin-bottom: 30px;
+    line-height: 1.31;
+  }
 }
 
 .subscribe {
@@ -955,12 +951,12 @@ body {
   font-weight: 600;
   text-align: left;
   margin-bottom: 30px;
-  font-size: 22px;
+  font-size: 19px;
 }
 
 input {
   color: #ffffff;
-  width: 420px;
+  width: 300px;
   height: 60px;
   padding-left: 28px;
   background-color: #1b1e2e;
@@ -1013,26 +1009,20 @@ input:hover::placeholder {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: row;
   font-family: "axiformablack";
   background-color: #1b1e2e;
   background-position: bottom;
   background-size: cover;
-  overflow: hidden;
   background-image: url(../img/form_bg.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
-@media (max-width: 399px) {
+@media (max-width: 920px) {
   .lets-talk {
     flex-direction: column;
-  }
-}
-@media (min-width: 400px) and (max-width: 819px) {
-  .lets-talk {
-    flex-direction: column;
-    min-width: 100%;
   }
 }
 .lets-talk__content {
@@ -1210,7 +1200,6 @@ input:hover::placeholder {
   padding-left: 110px;
   padding-top: 150px;
   z-index: 20;
-  overflow: hidden;
   position: absolute;
 }
 @media (max-width: 399px) {
@@ -1464,21 +1453,15 @@ input:hover::placeholder {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: row;
   font-family: "axiformablack";
   background-color: #1b1e2e;
   background-position: bottom;
   background-size: cover;
-  overflow: hidden;
 }
-@media (max-width: 399px) {
+@media (max-width: 920px) {
   .social {
     flex-direction: column;
-  }
-}
-@media (min-width: 400px) and (max-width: 819px) {
-  .social {
-    flex-direction: column;
-    min-width: 100%;
   }
 }
 .social__sidebar {
@@ -1489,7 +1472,6 @@ input:hover::placeholder {
   padding-left: 110px;
   padding-top: 150px;
   z-index: 20;
-  overflow: hidden;
 }
 @media (max-width: 399px) {
   .social__sidebar {
@@ -1719,7 +1701,6 @@ input:hover::placeholder {
   box-sizing: border-box;
   width: 62%;
   height: 100%;
-  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -1747,21 +1728,15 @@ input:hover::placeholder {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: row;
   font-family: "axiformablack";
   background-color: #1b1e2e;
   background-position: bottom;
   background-size: cover;
-  overflow: hidden;
 }
-@media (max-width: 399px) {
+@media (max-width: 920px) {
   .team {
     flex-direction: column;
-  }
-}
-@media (min-width: 400px) and (max-width: 819px) {
-  .team {
-    flex-direction: column;
-    min-width: 100%;
   }
 }
 .team__sidebar {
@@ -1772,7 +1747,6 @@ input:hover::placeholder {
   padding-left: 110px;
   padding-top: 150px;
   z-index: 20;
-  overflow: hidden;
   position: relative;
   z-index: 10;
 }
@@ -1907,7 +1881,6 @@ input:hover::placeholder {
   box-sizing: border-box;
   width: 62%;
   height: 100%;
-  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -1999,21 +1972,15 @@ input:hover::placeholder {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: row;
   font-family: "axiformablack";
   background-color: #1b1e2e;
   background-position: bottom;
   background-size: cover;
-  overflow: hidden;
 }
-@media (max-width: 399px) {
+@media (max-width: 920px) {
   .what {
     flex-direction: column;
-  }
-}
-@media (min-width: 400px) and (max-width: 819px) {
-  .what {
-    flex-direction: column;
-    min-width: 100%;
   }
 }
 .what__sidebar {
@@ -2024,7 +1991,6 @@ input:hover::placeholder {
   padding-left: 110px;
   padding-top: 150px;
   z-index: 20;
-  overflow: hidden;
 }
 @media (max-width: 399px) {
   .what__sidebar {
@@ -2136,7 +2102,6 @@ input:hover::placeholder {
   box-sizing: border-box;
   width: 62%;
   height: 100%;
-  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;

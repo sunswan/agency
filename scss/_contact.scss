@@ -5,46 +5,42 @@
     @include slogan;
     top: 200px;
     right: -370px;
-    @media (max-height: 720px) {
-      top: 142px;
-      right: -420px;
-    }
   }
 
   &__text2 {
-    top: 70px;
+    top: 160px;
     opacity: 0.3;
   }
 }
 #map {
-  width: 38%;
-  height: 97%;
+  width: 35%;
+  height: 95%;
   border: 2px solid $color__main_red;
   margin: 15px;
-  @include mobile {
-    width: 94%;
-    height: 97%;
-  }
 
-  @include tablet {
-    width: 70%;
-    height: 70%;
-  }
-  @include laptop {
-    width: 65%;
-    height: 65%;
+  @media (max-width: 920px) {
+    width: 94%;
+    min-height: 300px;
   }
 }
 
 .contact__page {
-  width: 62%;
+  width: 65%;
   height: 100%;
-  padding-left: 100px;
-  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 50px;
   background-image: url(../img/contact_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
+  @media (max-width: 920px) {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
 }
 
 .text-red {
@@ -56,6 +52,9 @@
   letter-spacing: normal;
   text-align: left;
   margin-bottom: 20px;
+  @media (max-height: 720px) {
+    margin-bottom: 10px;
+  }
 }
 
 .text-white {
@@ -64,6 +63,10 @@
   font-family: $font_AxiformaLight;
   margin-bottom: 60px;
   line-height: 1.71;
+  @media (max-height: 720px) {
+    margin-bottom: 30px;
+    line-height: 1.31;
+  }
 }
 
 .subscribe {
@@ -73,12 +76,12 @@
   font-weight: 600;
   text-align: left;
   margin-bottom: 30px;
-  font-size: 22px;
+  font-size: 19px;
 }
 
 input {
   color: $color__main_white;
-  width: 420px;
+  width: 300px;
   height: 60px;
   padding-left: 28px;
   background-color: $color__main_darkgrey;
