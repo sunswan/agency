@@ -160,7 +160,8 @@
     font-size: 16px;
   }
 
-  @include laptop {}
+  @include laptop {
+  }
 }
 
 @mixin huge-letter {
@@ -246,10 +247,12 @@
   background-color: $color__main_darkgrey;
   background-position: bottom;
   background-size: cover;
+  position: relative;
   overflow: hidden;
 
   @media (max-width: 920px) {
     flex-direction: column;
+    height: 1100px;
   }
 }
 
@@ -268,9 +271,9 @@
 
   @media (max-width: 920px) {
     width: 100%;
-    height: auto;
-    padding-bottom: 10%;
-    padding-top: 10%;
+    height: 45%;
+    padding-bottom: 5%;
+    padding-top: 5%;
   }
 }
 
@@ -287,9 +290,10 @@
 
   @media (max-width: 920px) {
     width: 100%;
-    height: auto;
-    padding-bottom: 10%;
-    padding-top: 10%;
+    height: 55%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-left: 0;
   }
 }
 
@@ -312,7 +316,6 @@
   background-color: $color__main_transparent;
   border-bottom: 1px solid transparent;
 
-
   @media (max-height: 720px) {
     height: 17%;
     font-size: 27px;
@@ -323,7 +326,7 @@
   background-color: $color__main_darkgrey-hover;
   border-bottom: 1px solid $color__main_red;
   color: $color__main_red;
-  transition: all 0.30s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   i {
     color: $color__main_red;
