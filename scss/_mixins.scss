@@ -18,11 +18,13 @@
     letter-spacing: normal;
     padding-top: 45px;
     padding-right: 5px;
+
     @include mobile {
       font-size: 25px;
       padding-top: 20px;
     }
   }
+
   .logo__agency {
     font-family: $font_AxiformaBlack;
     font-size: 22px;
@@ -69,6 +71,7 @@
   padding-top: 50px;
   outline: none;
   border: none;
+
   @include mobile {
     width: 60px;
     height: 60px;
@@ -94,6 +97,7 @@
       color: $color__main_white;
       cursor: pointer;
     }
+
     i {
       padding: 15px;
     }
@@ -108,6 +112,7 @@
     color: $color__main_white;
     text-decoration: none;
   }
+
   &__link:hover {
     transition: all 0.35s ease-in-out;
     background-color: $color__main_red;
@@ -133,6 +138,7 @@
   @media (max-height: 720px) {
     font-size: 207px;
   }
+
   @include laptop {
     font-size: 180px;
   }
@@ -154,8 +160,7 @@
     font-size: 16px;
   }
 
-  @include laptop {
-  }
+  @include laptop {}
 }
 
 @mixin huge-letter {
@@ -213,6 +218,7 @@
   background-image: none;
   cursor: pointer;
   color: $color__main_white;
+
   &:hover {
     transition: all 0.35s ease-in-out;
     transform: scale(0.99);
@@ -263,6 +269,7 @@
   position: relative;
   padding-left: 5%;
   z-index: 5;
+
   @media (max-width: 920px) {
     width: 100%;
     height: auto;
@@ -281,6 +288,7 @@
   padding-left: 50px;
   background-repeat: no-repeat;
   background-size: cover;
+
   @media (max-width: 920px) {
     width: 100%;
     height: auto;
@@ -306,6 +314,7 @@
   font-family: $font_AxiformaHeavy;
   cursor: pointer;
   background-color: $color__main_transparent;
+
   @media (max-height: 720px) {
     height: 17%;
     font-size: 27px;

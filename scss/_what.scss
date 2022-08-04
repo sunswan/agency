@@ -27,10 +27,12 @@
     @include text;
     margin: 0px 0px 84px 0px;
   }
+
   &__more {
     @include more;
     margin: 0px;
   }
+
   &__divider {
     @include divider;
     margin-top: 30px;

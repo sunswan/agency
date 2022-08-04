@@ -1,6 +1,7 @@
 body {
   background-color: $color__main_darkgrey;
 }
+
 .intro {
   box-sizing: border-box;
   min-height: 100vh;
@@ -31,11 +32,13 @@ body {
       max-width: 70%;
       top: 38%;
     }
+
     @include desktop {
       max-width: 80%;
       top: 40%;
     }
   }
+
   &__design {
     position: absolute;
     top: 30%;
@@ -45,6 +48,7 @@ body {
     @include mobile {
       top: 33%;
     }
+
     @include tablet {
       top: 36%;
     }
@@ -110,6 +114,7 @@ body {
   &__links {
     margin: 30% 10% 0px 0px;
     text-align: right;
+
     @media (max-height: 670px) {
       margin: 20% 10% 0px 0px;
     }
@@ -118,6 +123,7 @@ body {
       margin: 15% 8% 0px 0px;
     }
   }
+
   &__link {
     font-family: $font_AxiformaBlack;
     font-size: 22px;
@@ -127,14 +133,17 @@ body {
     color: $color__main_white;
     text-decoration: none;
     text-transform: uppercase;
+
     @include mobile {
       font-size: 18px;
     }
   }
+
   &__link:hover {
     color: $color__main_red;
   }
 }
+
 .items {
   font-family: $font_AxiformaLight;
   color: $color__main_white;
@@ -142,9 +151,11 @@ body {
   font-weight: 300;
   text-align: right;
   margin: 12% 10% 0px 0px;
+
   @media (max-height: 720px) {
     margin: 8% 10% 0px 0px;
   }
+
   @include mobile {
     margin: 5% 8% 0px 0px;
   }
@@ -154,28 +165,35 @@ body {
     color: $color__main_grey;
     text-transform: uppercase;
   }
+
   &__copyright {
     line-height: 2.58;
+
     @include mobile {
       line-height: 1.58;
       font-size: 10px;
     }
   }
+
   &__crafted {
     text-transform: uppercase;
   }
+
   &__follow {
     line-height: 3;
     margin-top: 55px;
+
     @include mobile {
       margin-top: 25px;
     }
   }
 }
+
 .intro-divider {
   width: 250px;
   border-top: 1px solid $color__main_red;
   margin-left: 142px;
+
   @include mobile {
     width: 220px;
     margin-left: 113px;
@@ -191,6 +209,7 @@ body {
     color: $color__main_white;
     cursor: pointer;
   }
+
   i {
     padding: 15px;
   }
@@ -204,6 +223,7 @@ body {
   color: $color__main_white;
   text-decoration: none;
 }
+
 .social__link:hover {
   background-color: $color__main_red;
 }

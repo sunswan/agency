@@ -18,16 +18,18 @@
     background-color: $color__form;
     display: flex;
   }
+
   &__text-content {
     @include text-content;
     margin-top: 112px;
   }
+
   &__divider {
     @include divider;
     margin-top: 71px;
   }
-
 }
+
 .art {
   font-family: $font_AxiformaHeavy;
   text-transform: uppercase;
@@ -35,11 +37,13 @@
   font-weight: 900;
   color: $color__main_red;
 }
+
 .left-block {
   width: 50%;
   padding-left: 139px;
   padding-top: 125px;
 }
+
 .right-block {
   width: 50%;
   padding-right: 139px;
@@ -53,6 +57,7 @@
     background-color: $color__main_darkgrey;
     outline: none;
     border: none;
+
     &:hover {
       border: 2px solid $color__main_red;
     }
@@ -67,10 +72,12 @@
     outline: none;
     border: none;
     margin-bottom: 20px;
+
     &:hover {
       border: 2px solid $color__main_red;
     }
   }
+
   ::placeholder {
     font-family: $font_AxiformaLight;
     font-size: 12px;

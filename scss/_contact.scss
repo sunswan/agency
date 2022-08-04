@@ -37,6 +37,7 @@
   letter-spacing: normal;
   text-align: left;
   margin-bottom: 20px;
+
   @media (max-height: 720px) {
     margin-bottom: 10px;
   }
@@ -48,6 +49,7 @@
   font-family: $font_AxiformaLight;
   margin-bottom: 60px;
   line-height: 1.71;
+
   @media (max-height: 720px) {
     margin-bottom: 30px;
     line-height: 1.31;
@@ -72,6 +74,7 @@ input {
   background-color: $color__main_darkgrey;
   outline: none;
   border: none;
+
   &:hover {
     border: 2px solid $color__main_red;
   }

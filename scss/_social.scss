@@ -9,7 +9,7 @@
     opacity: 0.3;
     top: 80%;
   }
-  
+
   &__sidebar {
     @include sidebar;
   }
@@ -26,6 +26,7 @@
   &__divider {
     @include divider;
   }
+
   &__huge-letter {
     @include huge-letter;
   }
@@ -40,6 +41,7 @@
   text-align: left;
   margin: 125px 0px 15px 0px;
 }
+
 .icon-tw-big {
   width: 50vw;
   height: 100vh;
@@ -82,6 +84,7 @@
   margin-left: 75px;
   color: $color__main_white;
   z-index: 200;
+
   a {
     text-decoration: none;
     color: $color__main_white;
@@ -97,10 +100,12 @@
 .block-header {
   display: flex;
   margin: 0px 20px;
+
   i {
     color: $color__main_red;
   }
 }
+
 .text-data {
   font-weight: 600;
   line-height: 1.71;
@@ -117,6 +122,7 @@
   line-height: 2;
   text-align: right;
   margin: 20px 80px 0px 30px;
+
   i {
     margin-left: 20px;
   }

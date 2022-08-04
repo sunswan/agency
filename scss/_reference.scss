@@ -102,6 +102,7 @@
   @include tablet {
     margin-top: 150px;
   }
+
   @include laptop {
     margin-top: 200px;
   }
@@ -130,6 +131,7 @@
   cursor: pointer;
   text-transform: uppercase;
   font-family: $font_AxiformaSemiBold;
+
   :hover {
     color: $color__main_red;
   }
@@ -138,4 +140,3 @@
     margin-left: 95px;
   }
 }
-
