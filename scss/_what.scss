@@ -1,4 +1,5 @@
 .what {
+  overflow: hidden;
   @include wrapper;
 
   &__slogan {
@@ -48,13 +49,11 @@
   @include page;
   display: block;
   padding-left: 80px;
+  padding-top: 10%;
   background-image: url(../img/what_bg.jpg);
 }
 
 .block {
   @include block;
+  margin-bottom: 2%;
 }
-
-// .block-text {
-//   @include block-text;
-// }

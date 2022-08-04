@@ -12,17 +12,10 @@
 @import "./team";
 @import "./what";
 
-html {
-  height: 100%;
-}
-
 body {
   margin: 0;
   padding: 0;
-  perspective: 1px;
-  transform-style: preserve-3d;
-  // overflow-y: scroll;
-  // overflow-x: hidden;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -34,6 +27,7 @@ body {
   position: absolute;
   overflow: hidden;
   z-index: 2;
+  display: none;
 }
 
 .fa-angle-right {

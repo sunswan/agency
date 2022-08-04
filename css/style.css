@@ -164,9 +164,9 @@ table {
 }
 .block:hover {
   background-color: #1b1e2e65;
-  border-bottom: 2px solid #ed2340;
+  border-bottom: 1px solid #ed2340;
   color: #ed2340;
-  transition: all 0.35s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .block:hover i {
   color: #ed2340;
@@ -402,7 +402,7 @@ body {
 }
 @media (max-height: 670px) {
   .navy__links {
-    margin: 20% 10% 0px 0px;
+    margin: 23% 10% 0px 0px;
   }
 }
 @media (max-width: 399px) {
@@ -514,13 +514,15 @@ body {
 
 .about {
   width: 100%;
-  height: 100vh;
+  height: 680px;
+  min-height: 100%;
   display: flex;
   flex-direction: row;
   font-family: "axiformablack";
   background-color: #1b1e2e;
   background-position: bottom;
   background-size: cover;
+  overflow: hidden;
 }
 @media (max-width: 920px) {
   .about {
@@ -636,7 +638,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   padding: 0;
-  margin: 15% 0 0 0;
+  margin: 15% 0 5% 0;
   border: none;
   outline: none;
   background-color: transparent;
@@ -644,20 +646,16 @@ body {
   cursor: pointer;
   color: #ffffff;
 }
-.about__more:hover {
-  transition: all 0.35s ease-in-out;
-  transform: scale(0.99);
-}
 .about__more a {
   text-decoration: none;
   color: #ffffff;
 }
 .about__more a:hover {
-  transition: all 0.35s ease-in-out;
+  transition: all 0.3s ease-in-out;
   color: #ed2340;
 }
 .about__divider {
-  margin: 15% 0% 5% 0;
+  margin: 0 0 5% 0;
   width: 90%;
   border-top: 1px solid #ed2340;
 }
@@ -705,6 +703,7 @@ body {
   font-family: "axiformaheavy";
   cursor: pointer;
   background-color: transparent;
+  border-bottom: 1px solid transparent;
 }
 @media (max-height: 720px) {
   .block {
@@ -715,13 +714,15 @@ body {
 
 .contact {
   width: 100%;
-  height: 100vh;
+  height: 680px;
+  min-height: 100%;
   display: flex;
   flex-direction: row;
   font-family: "axiformablack";
   background-color: #1b1e2e;
   background-position: bottom;
   background-size: cover;
+  overflow: hidden;
 }
 @media (max-width: 920px) {
   .contact {
@@ -879,13 +880,15 @@ input:hover::placeholder {
 
 .lets-talk {
   width: 100%;
-  height: 100vh;
+  height: 680px;
+  min-height: 100%;
   display: flex;
   flex-direction: row;
   font-family: "axiformablack";
   background-color: #1b1e2e;
   background-position: bottom;
   background-size: cover;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -954,7 +957,7 @@ input:hover::placeholder {
   }
 }
 .lets-talk__divider {
-  margin: 15% 0% 5% 0;
+  margin: 0 0 5% 0;
   width: 90%;
   border-top: 1px solid #ed2340;
   margin-top: 71px;
@@ -1045,13 +1048,16 @@ input:hover::placeholder {
 }
 
 .reference {
-  box-sizing: border-box;
-  min-height: 100vh;
+  width: 100%;
+  height: 670px;
+  min-height: 100%;
   text-align: center;
-  transform-style: preserve-3d;
   position: relative;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  background-image: url(../img/reference_bg.jpg);
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 .reference__slogan {
   font-weight: 900;
@@ -1149,7 +1155,7 @@ input:hover::placeholder {
   font-size: 14px;
   font-weight: 600;
   padding: 0;
-  margin: 15% 0 0 0;
+  margin: 15% 0 5% 0;
   border: none;
   outline: none;
   background-color: transparent;
@@ -1158,49 +1164,30 @@ input:hover::placeholder {
   color: #ffffff;
   margin-bottom: 142px;
 }
-.reference__more:hover {
-  transition: all 0.35s ease-in-out;
-  transform: scale(0.99);
-}
 .reference__more a {
   text-decoration: none;
   color: #ffffff;
 }
 .reference__more a:hover {
-  transition: all 0.35s ease-in-out;
+  transition: all 0.3s ease-in-out;
   color: #ed2340;
 }
 .reference__divider {
-  margin: 15% 0% 5% 0;
+  margin: 0 0 5% 0;
   width: 90%;
   border-top: 1px solid #ed2340;
 }
 
-.reference::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  transform-origin: center;
-  height: 1080px;
-  background-image: url("../img/reference_bg.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: 1s;
-  /* Parallax */
-  transform: translateZ(-0.7px) scale(2);
+.social-wrapper a:hover {
+  opacity: 0.7;
 }
 
 .reference__book-img {
   position: absolute;
-  top: 138px;
-  left: 32%;
+  top: 15%;
+  right: 5%;
   z-index: 15;
-  max-width: 80%;
+  max-width: 60%;
 }
 @media (max-width: 399px) {
   .reference__book-img {
@@ -1256,61 +1243,17 @@ input:hover::placeholder {
   margin-bottom: 30px;
 }
 
-.socialny__icon {
-  display: flex;
-  z-index: 25;
-}
-.socialny__icon a {
-  text-decoration: none;
-  color: #ffffff;
-  cursor: pointer;
-}
-.socialny__icon i {
-  padding: 15px;
-}
-.socialny__link {
-  z-index: 50;
-  width: 46px;
-  height: 46px;
-  background-color: transparent;
-  text-align: center;
-  color: #ffffff;
-  text-decoration: none;
-}
-.socialny__link:hover {
-  transition: all 0.35s ease-in-out;
-  background-color: #ed2340;
-}
-
-.share {
-  margin-left: 214px;
-  margin-top: 10px;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 2;
-  color: #ffffff;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-family: "axiformasemibold";
-}
-.share :hover {
-  color: #ed2340;
-}
-@media (max-width: 399px) {
-  .share {
-    margin-left: 95px;
-  }
-}
-
 .social {
   width: 100%;
-  height: 100vh;
+  height: 680px;
+  min-height: 100%;
   display: flex;
   flex-direction: row;
   font-family: "axiformablack";
   background-color: #1b1e2e;
   background-position: bottom;
   background-size: cover;
+  overflow: hidden;
 }
 @media (max-width: 920px) {
   .social {
@@ -1396,7 +1339,7 @@ input:hover::placeholder {
   margin-top: 260px;
 }
 .social__divider {
-  margin: 15% 0% 5% 0;
+  margin: 0 0 5% 0;
   width: 90%;
   border-top: 1px solid #ed2340;
 }
@@ -1424,12 +1367,12 @@ input:hover::placeholder {
 }
 
 .icon-tw-big {
-  width: 50vw;
-  height: 100vh;
+  width: 200px;
+  height: 250px;
   position: absolute;
   z-index: 1;
-  right: -50px;
-  bottom: -50px;
+  right: -5%;
+  bottom: 0;
 }
 
 .icon-tw-small {
@@ -1471,8 +1414,8 @@ input:hover::placeholder {
 
 .slider-wrapper {
   width: 640px;
-  height: 65%;
-  margin-top: 200px;
+  height: 90%;
+  margin-top: 5%;
   position: relative;
   z-index: 100;
   overflow: hidden;
@@ -1563,14 +1506,17 @@ input:hover::placeholder {
 }
 
 .team {
+  position: relative;
   width: 100%;
-  height: 100vh;
+  height: 680px;
+  min-height: 100%;
   display: flex;
   flex-direction: row;
   font-family: "axiformablack";
   background-color: #1b1e2e;
   background-position: bottom;
   background-size: cover;
+  overflow: hidden;
 }
 @media (max-width: 920px) {
   .team {
@@ -1619,8 +1565,6 @@ input:hover::placeholder {
   position: relative;
   padding-left: 5%;
   z-index: 5;
-  position: relative;
-  z-index: 10;
 }
 @media (max-width: 920px) {
   .team__sidebar {
@@ -1659,7 +1603,7 @@ input:hover::placeholder {
   font-family: "axiformalight";
   font-size: 22px;
   color: #ffffff;
-  margin: 220px 0px 50px 0px;
+  margin: 25% 0px 25% 0px;
 }
 .team__text-content {
   width: 375px;
@@ -1669,7 +1613,7 @@ input:hover::placeholder {
   font-size: 14px;
   font-weight: 300;
   color: #9296a1;
-  margin-bottom: 120px;
+  margin-bottom: 15%;
 }
 @media (max-width: 399px) {
   .team__text-content {
@@ -1695,7 +1639,7 @@ input:hover::placeholder {
   left: -245px;
 }
 .team__divider {
-  margin: 15% 0% 5% 0;
+  margin: 0 0 5% 0;
   width: 90%;
   border-top: 1px solid #ed2340;
 }
@@ -1743,6 +1687,7 @@ input:hover::placeholder {
   font-weight: 900;
   text-align: left;
   color: #ed2340;
+  text-align: center;
 }
 .rate span {
   font-size: 42px;
@@ -1783,14 +1728,17 @@ input:hover::placeholder {
 }
 
 .what {
+  overflow: hidden;
   width: 100%;
-  height: 100vh;
+  height: 680px;
+  min-height: 100%;
   display: flex;
   flex-direction: row;
   font-family: "axiformablack";
   background-color: #1b1e2e;
   background-position: bottom;
   background-size: cover;
+  overflow: hidden;
 }
 @media (max-width: 920px) {
   .what {
@@ -1887,7 +1835,7 @@ input:hover::placeholder {
   font-size: 14px;
   font-weight: 600;
   padding: 0;
-  margin: 15% 0 0 0;
+  margin: 15% 0 5% 0;
   border: none;
   outline: none;
   background-color: transparent;
@@ -1896,20 +1844,16 @@ input:hover::placeholder {
   color: #ffffff;
   margin: 0px;
 }
-.what__more:hover {
-  transition: all 0.35s ease-in-out;
-  transform: scale(0.99);
-}
 .what__more a {
   text-decoration: none;
   color: #ffffff;
 }
 .what__more a:hover {
-  transition: all 0.35s ease-in-out;
+  transition: all 0.3s ease-in-out;
   color: #ed2340;
 }
 .what__divider {
-  margin: 15% 0% 5% 0;
+  margin: 0 0 5% 0;
   width: 90%;
   border-top: 1px solid #ed2340;
   margin-top: 30px;
@@ -1940,6 +1884,7 @@ input:hover::placeholder {
   background-size: cover;
   display: block;
   padding-left: 80px;
+  padding-top: 10%;
   background-image: url(../img/what_bg.jpg);
 }
 @media (max-width: 920px) {
@@ -1968,6 +1913,8 @@ input:hover::placeholder {
   font-family: "axiformaheavy";
   cursor: pointer;
   background-color: transparent;
+  border-bottom: 1px solid transparent;
+  margin-bottom: 2%;
 }
 @media (max-height: 720px) {
   .block {
@@ -1976,15 +1923,10 @@ input:hover::placeholder {
   }
 }
 
-html {
-  height: 100%;
-}
-
 body {
   margin: 0;
   padding: 0;
-  perspective: 1px;
-  transform-style: preserve-3d;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -1995,7 +1937,8 @@ body {
   right: 5%;
   position: absolute;
   overflow: hidden;
-  z-index: 10;
+  z-index: 2;
+  display: none;
 }
 
 .fa-angle-right {

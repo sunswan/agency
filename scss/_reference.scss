@@ -1,11 +1,15 @@
 .reference {
-  box-sizing: border-box;
-  min-height: 100vh;
+  width: 100%;
+  height: 670px;
+  min-height: 100%;
   text-align: center;
-  transform-style: preserve-3d;
   position: relative;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  background-image: url(../img/reference_bg.jpg);
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
 
   &__slogan {
     @include slogan;
@@ -42,32 +46,16 @@
 
 }
 
-.reference::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  // top: 677px;
-  z-index: -1;
-  transform-origin: center;
-  height: 1080px;
-  background-image: url("../img/reference_bg.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: 1s;
-  /* Parallax */
-  transform: translateZ(-0.7px) scale(2);
+.social-wrapper a:hover {
+  opacity: 0.7;
 }
 
 .reference__book-img {
   position: absolute;
-  top: 138px;
-  left: 32%;
+  top: 15%;
+  right: 5%;
   z-index: 15;
-  max-width: 80%;
+  max-width: 60%;
 
   @include mobile {
     max-width: 88%;
@@ -115,28 +103,4 @@
   font-weight: 900;
   color: $color__main_red;
   margin-bottom: 30px;
-}
-
-.socialny {
-  @include social-icons;
-}
-
-.share {
-  margin-left: 214px;
-  margin-top: 10px;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 2;
-  color: $color__main_white;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-family: $font_AxiformaSemiBold;
-
-  :hover {
-    color: $color__main_red;
-  }
-
-  @include mobile {
-    margin-left: 95px;
-  }
 }
